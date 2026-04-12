@@ -73,6 +73,8 @@ function drawPlot(selectedStation) {
   const plot = Plot.plot({
     height: 500,
     color: { ...colorScale, legend: true },
+      x: { label: "Date" },
+      y: { label: "Number of riders per station" },
     marks: [
       Plot.line(ridership, {
         x: "date",
